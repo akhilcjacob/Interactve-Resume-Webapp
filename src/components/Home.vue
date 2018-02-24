@@ -1,11 +1,12 @@
 <template>
-  <div class="row pt-lg-3">
+  <div class="col">
     <div class="col-lg-12">
       <h1 class="">Template Header 1</h1>
       <p class="subtitle">
         Akhil Jacob
     </p>
 </div>
+<button type="button" class="btn btn-primary">asdfasdf</button>
 </div>
 </template>
 
@@ -18,6 +19,6 @@ export default {
 <style scoped="">
 p.subtitle {
   font-size: 2rem;
-  color: #999999;
+  color: blue;
 }
 </style>
