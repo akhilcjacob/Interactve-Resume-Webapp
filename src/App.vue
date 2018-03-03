@@ -64,7 +64,7 @@ html, body {
 }
 
 * {
-  font-family: Anonymous Pro for Powerline;
+ font-family: "Anonymous Pro";
 }
 .fade-enter-active, .fade-leave-active{
   transition: opacity 1s ease;
