@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="">
      <h1 class="text-center">
       <vue-typer  style="color: blue;" text='Akhil Jacob' :repeat='0' caret-animation='smooth' pre-type-delay='300' @typed='showSubtitle="true"'></vue-typer>
@@ -56,7 +57,7 @@ export default {
 }
 
 </script>
-<style type="text/css">
+<style>
 html, body {
   margin: 0;
   height: 100%;
@@ -82,5 +83,4 @@ h1{
   margin-right: 10px;
   margin-left: 10px;
 }
-
 </style>
