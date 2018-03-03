@@ -74,9 +74,6 @@ html, body {
   opacity: 0;
 
 }
-
-</style>
-<style scoped>
 h1{
  font-size: 60px;
 }

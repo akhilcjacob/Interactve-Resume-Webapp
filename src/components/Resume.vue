@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style scoped="">
+<style >
 .subtitle {
   font-size: 1rem;
   color: #515151;
