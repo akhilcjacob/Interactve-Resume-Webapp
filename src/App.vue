@@ -58,29 +58,4 @@ export default {
 
 </script>
 <style>
-html, body {
-  margin: 0;
-  height: 100%;
-  background: #F1F3FA;
-}
-
-* {
- font-family: "Anonymous Pro";
-}
-.fade-enter-active, .fade-leave-active{
-  transition: opacity 1s ease;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  position: absolute;
-  opacity: 0;
-
-}
-h1{
- font-size: 60px;
-}
-
-.nav-item{
-  margin-right: 10px;
-  margin-left: 10px;
-}
 </style>

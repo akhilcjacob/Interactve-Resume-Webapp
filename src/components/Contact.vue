@@ -2,7 +2,7 @@
  <transition name="fade" mode="out-in">
 
    <div class="col">
-    <h1> THIS IS CONTACT</h1>
+    <h3> THIS IS CONTACT</h3>
 </div></transition>
 </template>
 
