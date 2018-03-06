@@ -3,7 +3,7 @@
    <div class="col">
     <h3 class="text-center pt-3"> MY RESUME</h3>
     <div>
-        <div class="container pt-5">
+        <div class="container pt-3">
           <div class="row">
             <div class="m-auto text-center">
               <h4 class="section-heading">Education</h4>

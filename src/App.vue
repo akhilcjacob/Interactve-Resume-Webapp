@@ -31,7 +31,7 @@
   </div>
 </transition>
 <transition name="fade">
-  <div id="app" v-show="showRouter" class="col pt-4">
+  <div id="app" v-show="showRouter" class="col pt-4 bg-white">
     <router-view/>
   </div>
 </transition>
