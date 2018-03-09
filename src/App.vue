@@ -1,8 +1,7 @@
 <template>
   <div>
-
     <div class="">
-     <h1 class="text-center col-10 m-auto text-center">
+     <h1 class="text-center col-10 m-auto pr-0 pl-1 text-center">
       <vue-typer  style="color: blue;" text='Akhil Jacob' :repeat='0' caret-animation='smooth' pre-type-delay='300' @typed='showSubtitle="true"'></vue-typer>
     </h1>
     <h4 class="text-center">
@@ -12,7 +11,7 @@
   <transition name="fade"  @afterEnter='showRouter="true"'>
    <div class="container w-75 "  v-show="showNav">
     <nav class="nav justify-content-center text-center">
-      <li class="nav-item  mt-2">
+      <li class="nav-item whitespace mt-2">
         <a class="nav-link  btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('projects')" :class="{ coloring:isActive('projects') }" href="#/projects/">Projects</a>
       </li>
       <!-- <li class="nav-item pt-2">//</li> -->
@@ -41,6 +40,7 @@
 
 <script>
 import { VueTyper } from 'vue-typer'
+
 export default {
   name: 'App',
   data: function () {
@@ -48,7 +48,7 @@ export default {
       showNav: false,
       showSubtitle: false,
       showRouter: false,
-      activeItem: 'projects'
+      activeItem: this.$route.path.replace(/\//g, '')
     }
   },
 
@@ -72,6 +72,8 @@ html, body {
   margin: 0;
   height: 100%;
   background: #F1F3FA;
+  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
 }
 .vue-typer .custom.char.typed {
   color: white;
@@ -90,19 +92,7 @@ html, body {
   opacity: 0;
 
 }
-h1{
-  font-size: 5vh;
-}
-@media screen and (min-width: 480px) {
-  h4{
-   font-size: 4vh;
 
- }
-}
-h4{
- font-size: 2vh;
-
-}
 .nav-link{
   border-color: transparent;
 }

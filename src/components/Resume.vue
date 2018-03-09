@@ -1,13 +1,12 @@
 <template>
  <transition name="fade" mode="out-in">
    <div class="col">
-    <h3 class="text-center pt-3"> MY RESUME</h3>
     <div>
         <div class="container pt-3">
-          <div class="row">
+          <div class="row m-auto " style="background-color:transparent">
             <div class="m-auto text-center">
               <h4 class="section-heading">Education</h4>
-              <hr class="col-4 light">
+              <hr class="col-4" style="background-color:rgba(255,255,255,0.4);">
               <p align="center" class="text-shadow">
                 <a  href="https://goo.gl/maps/HL5CnRkzN9t" target="_blank"><strong>  Rensselaer Polytechnic Institute</strong></a>
                 <br>
