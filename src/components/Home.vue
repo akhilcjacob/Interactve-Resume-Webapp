@@ -11,7 +11,7 @@
         <strong>A fun fact about me</strong>, I have traveled all over the world. Places I've been:
       </p>
     </div>
-    <div class="m-auto col-10 text-center pt-3 w-100">
+    <div class="m-auto col-10 text-center pt-3">
       <div class="google-maps">
         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tOgz6eB3eRflYXEXu_qw3UQ8QYLzxKUN" width="640" height="500" frameborder="0" style="border:0"></iframe>
       </div>
@@ -32,16 +32,6 @@ export default {
   color: #515151;
 }
 .google-maps {
-  position: relative;
-  padding-bottom: 100%; // This is the aspect ratio
-  height: 50%;
   overflow: hidden;
-}
-.google-maps iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 40% !important;
 }
 </style>

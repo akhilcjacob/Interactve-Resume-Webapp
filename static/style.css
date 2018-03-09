@@ -1,25 +1,110 @@
+/* Safari and Chrome - necessary duplicate */
+.text-card{
+  background:#2f343f;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 97%;
+  height: 97%;
+}
+* {
+ font-family: "Anonymous Pro";
+ overflow: hidden;
+    
+}
+
+@keyframes colorchange
+{
+  0%   {background: #3476ff;}
+  25%  {background: #00bcb6;}
+  75%  {background: #4eb45f;}
+  100% {background: #3476ff;}
+}
+
+@-webkit-keyframes colorchange 
+{
+  0%   {background: #3476ff;}
+  25%  {background: #00bcb6;}
+  75%  {background: #4eb45f;}
+  100% {background: #3476ff;}
+}
+@keyframes borderColor
+{
+  0%   {border-color: #3476ff;}
+  25%  {border-color: #00bcb6;}
+  75%  {border-color: #4eb45f;}
+  100% {border-color: #3476ff;}
+}
+
+@-webkit-keyframes borderColor 
+{
+  0%   {border-color: #3476ff;}
+  25%  {border-color: #00bcb6;}
+  75%  {border-color: #4eb45f;}
+  100% {border-color: #3476ff;}
+}
+
 html, body {
   margin: 0;
   height: 100%;
-  background: #F1F3FA;
+}
+body {
+  animation: colorchange 40s infinite; /* animation-name followed by duration in seconds*/
+  -webkit-animation: colorchange 40s infinite; /* Chrome and Safari */
+}
+.coloring{
+  border-radius: 5;
+  border-style: solid;
+  border-width: 2px;
+  border-left: 0px;
+  border-right: 0px;
+
+  animation: borderColor 40s infinite; /* animation-name followed by duration in seconds*/
+  -webkit-animation: borderColor 40s infinite; /* Chrome and Safari */
 }
 
-* {
- font-family: "Anonymous Pro";
+.bg-custom{
+  background: #2f343f;
 }
-.fade-enter-active, .fade-leave-active{
-  transition: opacity 1s ease;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+
+.center {
   position: absolute;
-  opacity: 0;
+  top: 45%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%, -50%);
+}
+
+.whitespace{
+  white-space: normal;
+  z-index: 1000;
 
 }
-h1{
- font-size: 60px;
+.whitespace:hover{ 
+  animation: colorchange 40s infinite; /* animation-name followed by duration in seconds*/
+  -webkit-animation: colorchange 40s infinite; /* Chrome and Safari */
 }
 
-.nav-item{
-  margin-right: 10px;
-  margin-left: 10px;
+/* ---- reset ---- */
+
+
+canvas {
+  display: absolute;
+  vertical-align: bottom;
 }
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
