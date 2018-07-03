@@ -73,7 +73,6 @@ html, body {
   height: 100%;
   background: #F1F3FA;
   font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-
 }
 .vue-typer .custom.char.typed {
   color: white;
@@ -84,8 +83,11 @@ html, body {
 * {
  font-family: "Anonymous Pro";
 }
-.fade-enter-active, .fade-leave-active{
-  transition: opacity 1s ease;
+.fade-enter-active{
+  transition: opacity 1s ease-in;
+}
+.fade-leave-active{
+  transition: opacity 0.3s ease-out;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   position: absolute;
@@ -95,6 +97,10 @@ html, body {
 
 .nav-link{
   border-color: transparent;
+}
+
+button{
+   outline: none !important;
 }
 .bg-faded-white{
   border-color: white;
