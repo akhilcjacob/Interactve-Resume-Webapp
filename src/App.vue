@@ -11,21 +11,21 @@
   <transition name="fade"  @afterEnter='showRouter="true"'>
    <div class="container w-75 "  v-show="showNav">
     <nav class="nav justify-content-center text-center">
-      <li class="nav-item whitespace mt-2">
+      <!-- <li class="nav-item whitespace mt-2">
         <a class="nav-link  btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('projects')" :class="{ coloring:isActive('projects') }" href="#/projects/">Projects</a>
-      </li>
+      </li> -->
       <!-- <li class="nav-item pt-2">//</li> -->
-      <li class="nav-item mt-2">
-        <a class="nav-link  text-white btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('resume')" :class="{ coloring:isActive('resume') }" href="#/resume/">Resume</a>
-      </li>
+      <!-- <li class="nav-item mt-2">
+        <a class="nav-link  text-white btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('WorkExperience')" :class="{ coloring:isActive('WorkExperience') }" href="#/WorkExperience/">Work Experience</a>
+      </li> -->
       <!-- <li class="nav-item pt-2">//</li> -->
       <li class="nav-item  mt-2">
-        <a class="nav-link  text-white btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('contact')" :class="{ coloring:isActive('contact') }" href="#/contact/">Contact</a>
+        <a class="nav-link  text-white btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('contact')" :class="{ coloring:isActive('contact') }" href="#/contact/">Home</a>
       </li>
       <!-- <li class="nav-item pt-2">//</li> -->
-      <li class="nav-item  mt-2 about">
-        <a class="nav-link  text-white btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('about')" :class="{ coloring:isActive('about') }" href="#/about/">About</a>
-      </li>
+      <!-- <li class="nav-item  mt-2 about"> -->
+        <!-- <a class="nav-link  text-white btn btn-outline btn-outline-primary  text-white" v-on:click="setActive('about')" :class="{ coloring:isActive('about') }" href="#/about/">About</a> -->
+      <!-- </li>  -->
     </nav>
   </div>
 </transition>
